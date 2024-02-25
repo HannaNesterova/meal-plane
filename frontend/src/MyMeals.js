@@ -2,12 +2,12 @@ import { CiEdit } from "react-icons/ci";
 import { MdDelete } from "react-icons/md";
 
 
-function MyMeals({addText, editText, deleteText}) {
+function MyMeals({addText, updatingInInput, deleteMeal}) {
     return(
         <div>
             <p>{addText}</p>
-            <CiEdit onClick={editText}/>
-            <MdDelete onClick={deleteText}/>
+            <CiEdit onClick={updatingInInput}/>
+            <MdDelete onClick={deleteMeal}/>
         </div>
     )
 }
